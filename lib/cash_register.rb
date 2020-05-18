@@ -25,7 +25,7 @@ class CashRegister
   end
 
   def void_last_transaction()
-    
+
     if @items.length >= 1
       @total -= @previous
     else
