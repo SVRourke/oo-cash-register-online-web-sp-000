@@ -10,7 +10,7 @@ class CashRegister
     @total += (price * quantity)
   end
 
-  def apply_discount(discount)
+  def apply_discount()
     percentage = @discount / 100
     discount_value = @total * percentage
     @total -= discount_value
@@ -22,3 +22,4 @@ a = CashRegister.new(20)
 a.add_item("a", 100)
 puts a.total
 puts a.discount
+a.apply_discount()
