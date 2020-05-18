@@ -49,7 +49,7 @@ a = CashRegister.new(20)
 puts a.total
 a.add_item("a", 100, 1)
 a.add_item("b", 100, 3)
-# puts a.total
+puts a.total
 a.void_last_transaction
 puts "_"
 puts a.items
