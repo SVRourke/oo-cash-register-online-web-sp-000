@@ -11,7 +11,7 @@ class CashRegister
   end
 
   def apply_discount()
-    percentage = @discount / 100
+    percentage = @discount.to_f / 100
     puts percentage
     discount_value = @total * percentage
     puts discount_value
