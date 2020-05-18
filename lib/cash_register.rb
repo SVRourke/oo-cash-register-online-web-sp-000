@@ -11,10 +11,8 @@ class CashRegister
   end
 
   def apply_discount()
-
-    # percentage =
-    discount_value = @total * (@discount.to_f / 100)
-    @total -= discount_value
+    # discount_value = 
+    @total -= (@total * (@discount.to_f / 100))
     "After the discount, the total comes to $#{@total.to_i}."
   end
 
