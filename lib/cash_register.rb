@@ -2,7 +2,7 @@ class CashRegister
   attr_accessor :discount, :total, :items, :previous
 
   def initialize(discount =0)
-    @total = 100
+    @total = 0
     @discount = discount
     @items = Array.new
   end
