@@ -45,6 +45,7 @@ a.add_item("b", 100, 3)
 a.void_last_transaction
 puts "_"
 puts a.items
+puts a.total
 # puts a.discount
 # a.apply_discount()
 # puts a.total
