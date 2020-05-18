@@ -26,12 +26,19 @@ class CashRegister
 
   def void_last_transaction()
     puts @previous
-    @previous[2].times {@items.pop}
-    if @items.length >= 1
-      @total -= @previous[1].to_f
-    else
-      @total = 0.0
-    end
+    @previous[2].times {
+      @items.pop
+      if @items.length > 0
+        @total -= @previous[1].to_f
+      else
+        @total = 0.0
+      end
+    }
+    # if @items.length >= 1
+    #   @total -= @previous[1].to_f
+    # else
+    #   @total = 0.0
+    # end
   end
 
 
