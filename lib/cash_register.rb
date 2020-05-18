@@ -34,26 +34,6 @@ class CashRegister
         @total = 0.0
       end
     }
-    # if @items.length >= 1
-    #   @total -= @previous[1].to_f
-    # else
-    #   @total = 0.0
-    # end
   end
-
-
-
 end
 
-a = CashRegister.new(20)
-puts a.total
-a.add_item("a", 100, 1)
-a.add_item("b", 100, 3)
-puts a.total
-a.void_last_transaction
-puts "_"
-puts a.items
-puts a.total
-# puts a.discount
-# a.apply_discount()
-# puts a.total
