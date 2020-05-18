@@ -26,6 +26,7 @@ class CashRegister
 
   def void_last_transaction()
     puts @previous
+    @previous[2].times {@items.pop}
 
     # if @items.length >= 1
     #   @total -= @previous
