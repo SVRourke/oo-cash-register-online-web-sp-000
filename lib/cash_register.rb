@@ -20,3 +20,5 @@ end
 
 a = CashRegister.new(20)
 a.add_item("a", "100")
+puts a.total
+puts a.discount
