@@ -23,3 +23,4 @@ a.add_item("a", 100)
 puts a.total
 puts a.discount
 a.apply_discount()
+puts a.total
