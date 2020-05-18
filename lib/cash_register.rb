@@ -40,8 +40,9 @@ end
 
 a = CashRegister.new(20)
 a.add_item("a", 100)
-puts a.total
+a.add_item("b", 100)
+# puts a.total
 a.void_last_transaction
 # puts a.discount
 # a.apply_discount()
-puts a.total
+# puts a.total
