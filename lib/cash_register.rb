@@ -39,8 +39,8 @@ class CashRegister
 end
 
 a = CashRegister.new(20)
-a.add_item("a", 100)
-a.add_item("b", 100)
+a.add_item("a", 100, 1)
+a.add_item("b", 100, 3)
 # puts a.total
 a.void_last_transaction
 puts "_"
