@@ -9,7 +9,7 @@ class CashRegister
 
   def add_item(title, price, quantity=1)
     @total += (price * quantity)
-    @previous = price
+    @previous = [title, price, quantity]
     quantity.times do
       @items << title
     end
@@ -25,6 +25,7 @@ class CashRegister
   end
 
   def void_last_transaction()
+    
     if @items.length >= 1
       @total -= @previous
     else
